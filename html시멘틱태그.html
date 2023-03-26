@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>html 시멘틱구조</title>
+</head>
+<body>
+    <header> <!-- 헤더 영역 -->
+        <div id="logo">
+            <a href="#"><h1> 로고 영역 </h1></a>
+        </div>
+        <nav> <!-- 네비게이션 영역 헤더,푸터,사이드바,단독적으로도 사용 id 속성을 이용하면 개성있게 스타일 적용 가능.-->
+            <ul id="topMenu">
+                <li><a href="#">메뉴 1</a></li>  
+                <li><a href="#">메뉴 2</a></li>
+                <li><a href="#">메뉴 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contents"> <!-- 핵심 콘텐츠 웹문서에서 1번만 사용 가능.-->
+        <section id ="힐링"> <!-- 콘텐츠 영역을 나타냄.-->
+            <h2> 몸과 마음이 치유되는 섬 </h2>
+        </section>
+        <section id="액티비티">
+            <h2> 다양한 액티비티가 기다리는 섬 </h2>
+        </section>
+    </main>
+    <footer>
+        <section id="bottomMenu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">여행약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </section>
+    </footer>
+    <!-- div태그는 문서구조를 만들때 사요아고 id,class속성을 이용해 영역을 구분짓고 꾸민다. -->
+</body>
+</html>
+<!-- 시멘틱 태그를 사용하지 않고도 만들 수 있지만 사용하면 소스 코드만 보고 어느 부분이 제목인지
+메뉴인지 본문인지 쉽게 파악할 수 있다. 또한 문서 구조가 정확히 나눠지기 때문에 pc,모바일
+상관 없이 다양한 화면에서 웹문서를 표현하기가 쉽다. 마지막으로 인터넷에서 웹사이트 검색시 필요한 내용을 정확히
+찾을 수 있다.  -->
